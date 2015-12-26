@@ -31,11 +31,22 @@ function crap() {
 	alert("Alert CraP")
 }
 
+function mouseover() {
+	document.getElementById("Mouseover1").innerHTML = "Oh crap!! A MOUSE!!!";
+	console.log("A Mouse in the Console!!!")
+	alert("Alert Mouse!!!!")
+
+	document.getElementById("Mouseover1").innerHTML = "A SECOND MOUSE!!!";
+	console.log("A Second Mouse")
+	alert("Alert TWO MICE")
+
+}
+
 
 var democrat_array = ["Hilary", "Bernie"];
 var republican_array = ["Trump", "Cruz", "Rubio", "Carson"] 
 var candidate_array = [democrat_array,republican_array];
-	alert(candidate_array[1][2]);
+	// alert(candidate_array[1][2]);
 	console.log(candidate_array[1][2]);
 
 // use three === because it also checks the object type
@@ -52,47 +63,34 @@ if (5>1) {
 	console.log("Bite EVERYONE");
 }	
 
-// typeof variablename;
 
 
-// alert("Hello World");
-// document.getElementById("example").innerHTML = "HELLO WORLD";
+  //   	$(document).ready(function(){
+    		
+  //   	animate will shift whatever is referenced
+    		
+  //   		$(".crap").animate({
+  //   			opacity: 0.5,
+  //   			width: 1000,
+  //   		} , 5000);
 
-// var x = 100;
-// var y = 200;
-// var result = x + y;
+		// fadeOut and fadeIn will cause something to disappear and reappear    		
 
-// console.log(result);
+  //       $("p").fadeOut(1000, function(){
+  //   			$("p").fadeIn(500);
 
-// var noun = "smalltalk";
-// var verb = "runs";
-// var sentence = noun + " " + verb + " fast.";
-
-// console.log(sentence);
-// console.log(noun + " " + verb + " fast.");
-// console.log("smalltalk runs fast.");
-
-// var shirmung = {
-//   firstName: "Shirmung",
-//   lastName: "Bielefeld",
-//   birthday: "08/25/1900",
-//   interests: ["dogs", "knitting"]
-// };
-
-// console.log(shirmung.firstName);
-// console.log(shirmung.lastName);
-// console.log(shirmung.birthday);
-// console.log(shirmung.interests);
-// console.log(shirmung.interests[0]);
-// console.log(shirmung.interests[1]);
+  //   		});
 
 
-// // basic if else example, will cover more on Thursday:
+  //       // if i click this button, it will launch an alert
+          
+  //   		$("button").click(
+  //   			function() {
+  //   				alert("cluckcluckcluck");
+  //   			}
+  //   		)
+    	
+  //   	}
+  //   );
 
-// var password = "duck";
 
-// if (password === "duck") {
-//   console.log("correct password!");
-// } else {
-//   console.log("incorrect password");
-// }

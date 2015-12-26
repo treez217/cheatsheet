@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  		<style>
+  			.crap {
+  				height: 100px;
+  				width: 250px;
+  				background-color: gray;
+  			}
+
+  			.mouseover1 {
+  				background-color: yellow;
+  				height: 100px;
+  				width: 100px;
+  			}
+
+  			.mouseover2 {
+  				background-color: green;
+  				width: 300px;
+  				height: 200px;
+  			}
+
+  			p {
+  				height: 50px;
+  				width: 	50px;
+  				background-color: pink;
+  			}
+
+        button {
+          height: 150px;
+          background-color: orange;
+        }
+
+
+  		</style>
+  </head>
+
+  <body>
+    <div class ="crap" onclick="crap()" id="Boogers">Click Me</div>
+    
+
+    <div class="mouseover1" onmouseover="mouseover()" id="Mouseover1">Mouse Over Me </div>
+
+
+    <div class="mouseover2" onmouseover="mouseover()" id="Mouseover1">The second mouse over function </div>
+
+
+    <p> BLAH BLAH BLAH </p>
+
+     
+    <button> CLUCK ME </button>
+
+
+    <script src="CheatSheet.js"></script>
+
+    <script src="jquery-2.1.4.min.js"></script>
+
+    <script>
+    	$(document).ready(function(){
+    		$(".crap").animate({
+    			opacity: 0.5,
+    			width: 1000,
+    		} , 5000);
+
+    		
+
+        $("p").fadeOut(1000, function(){
+    			$("p").fadeIn(500);
+
+    		});
+
+
+        // if i click this button, it will launch an alert
+          
+    		$("button").click(
+    			function() {
+    				alert("cluckcluckcluck");
+    			}
+    		)
+    	
+    	}
+    );
+
+
+
+    </script> 
+
+  </body>
+</html>
